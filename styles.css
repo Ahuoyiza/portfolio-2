@@ -1,0 +1,55 @@
+:root {
+  --debug: 1px solid red;
+  /* primary colors */
+
+  /* secondary colors */
+
+  /* neutral colors */
+
+  /* font families  */
+  --globalFont: "Poppins", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--globalFont);
+  color: var(--VeryDarkBlue);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+* {
+  transition: 0.3s;
+}
+a {
+  text-decoration: none;
+}
+input,
+select {
+  border: none;
+  cursor: pointer;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
+button {
+  border-style: none;
+  border: none;
+  cursor: pointer;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
