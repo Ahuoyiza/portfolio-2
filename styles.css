@@ -1,13 +1,20 @@
 :root {
   --debug: 1px solid red;
   /* primary colors */
-
+  --darkBlue: rgb(37, 52, 153);
+  --mediumBlue: rgb(43, 61, 179);
+  --lightBlue: rgb(49, 70, 203);
   /* secondary colors */
+  --lightGrey: rgb(230, 230, 232);
+  --darkGrey: rgb(228, 227, 229);
 
   /* neutral colors */
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
 
   /* font families  */
-  --globalFont: "Poppins", sans-serif;
+  --globalFont: "Crimson Text", serif;
+  --logoFont: "Hachi Maru Pop", cursive;
 }
 
 html,
