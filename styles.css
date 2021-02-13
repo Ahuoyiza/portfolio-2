@@ -37,9 +37,16 @@ h5 {
 body,
 * {
   transition: 0.3s;
+  color: var(--black);
+}
+body {
+  background-color: var(--darkBlue);
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 a {
   text-decoration: none;
+  display: block;
 }
 input,
 select {
@@ -59,4 +66,103 @@ button {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+main {
+  width: 88vw;
+  background-color: white;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--black);
+  padding: 2%;
+  /* position: fixed; */
+}
+header .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+header .left .logo-container {
+  font-family: var(--logoFont);
+  font-size: 25px;
+  padding-top: 0;
+  cursor: pointer;
+}
+header .left .logo-container:hover {
+  /* font-size: 26px; */
+  font-weight: 700;
+}
+header .left nav {
+  /* outline: var(--debug); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 18px;
+  padding-top: 6px;
+}
+header .left nav a {
+  margin-right: 17px;
+  font-size: 16px;
+  font-weight: 400;
+}
+header .left nav a:hover {
+  color: rgb(105, 184, 199);
+  font-weight: 700;
+}
+header .right {
+  display: flex;
+  flex-direction: row;
+}
+header .right .number {
+  padding-top: 6px;
+  font-size: 20px;
+  font-weight: 700;
+}
+header .right .number:hover {
+  color: rgb(105, 184, 199);
+}
+header .right .contact-btn {
+  background-color: rgb(105, 184, 199);
+  color: #fff;
+  font-weight: 700;
+  width: 80px;
+  border-radius: 30px;
+  /* padding: 5px; */
+  margin-left: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .right .contact-btn:hover {
+  background-color: rgba(105, 184, 199, 0.5);
+}
+.intro {
+  display: flex;
+}
+.intro .intro-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7%;
+  padding-top: 8%;
+}
+.intro .intro-left .content h1 {
+  font-size: 70px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.intro .intro-right {
+  flex: 1;
+}
+.intro .intro-right .img img {
+  width: 80%;
+  height: 80vh;
+  object-fit: contain;
+}
+@media only screen and (max-width: 850px) {
 }
